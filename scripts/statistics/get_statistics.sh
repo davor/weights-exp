@@ -1,0 +1,5 @@
+for value in testTargetDataset " http://toxcreate3.in-silico.ch:8086/validation/crossvalidation/" accuracy numInstances numUnpredicted percentUnpredicted truePositiveRate; do echo $value; for cv in `cat ../status_qou_all_ds_rs_1_5.log | grep " http://toxcreate3.in-silico.ch:8086/validation/crossvalidation"`; do curl $cv/statistics | grep $value;  done; done > status_qou_all_stat
+
+for value in testTargetDataset " http://toxcreate3.in-silico.ch:8086/validation/crossvalidation/" accuracy numInstances numUnpredicted percentUnpredicted truePositiveRate; do echo $value; for cv in `cat ../weights_all_ds_rs_1_5.log | grep " http://toxcreate3.in-silico.ch:8086/validation/crossvalidation"`; do curl $cv/statistics | grep $value;  done; done > weights_all_stat
+
+for value in testTargetDataset " http://toxcreate3.in-silico.ch:8086/validation/crossvalidation/" accuracy numInstances numUnpredicted percentUnpredicted truePositiveRate; do echo $value; for cv in `cat ../1divWeights_all_ds_rs_1_5.log | grep " http://toxcreate3.in-silico.ch:8086/validation/crossvalidation"`; do curl $cv/statistics | grep $value;  done; done > 1divWeights_all_stat

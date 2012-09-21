@@ -1,0 +1,68 @@
+20120919_09_: ISS constitutional local_svm_classification ;lib=cdk 2
+ruby CV_ds_pctype_algo_algoparams_rseed.rb ISS constitutional local_svm_classification ;lib=cdk 2 ../data/datasets.yaml
+[2012-09-19T09:50:10.2557+02:00] datasets.yaml exists.
+[2012-09-19T09:50:10.2561+02:00] --- prediction_algorithm=local_svm_classification;pc_type=constitutional;feature_dataset_uri=http://toxcreate3.in-silico.ch:8086/dataset/351657;lib=cdk
+[2012-09-19T09:50:10.4088+02:00] --- 
+:dataset_uri: http://toxcreate3.in-silico.ch:8086/dataset/351650
+:prediction_feature: http://toxcreate3.in-silico.ch:8086/dataset/351650/feature/Canc
+:algorithm_uri: http://toxcreate3.in-silico.ch:8086/algorithm/lazar
+:algorithm_params: prediction_algorithm=local_svm_classification;pc_type=constitutional;feature_dataset_uri=http://toxcreate3.in-silico.ch:8086/dataset/351657;lib=cdk
+:random_seed: "2"
+[2012-09-19T13:30:02.1130+02:00] http://toxcreate3.in-silico.ch:8086/validation/crossvalidation/206
+[2012-09-19T13:30:31.8560+02:00] http://toxcreate3.in-silico.ch:8086/validation/report/crossvalidation/214
+[2012-09-19T13:30:31.8560+02:00]  
+=hyperlink("http://toxcreate3.in-silico.ch:8086/dataset/351650";"ISS"),=hyperlink("http://toxcreate3.in-silico.ch:8086/validation/report/crossvalidation/214";"report"),=hyperlink("http://toxcreate3.in-silico.ch:8086/validation/crossvalidation/206";"cv")
+------------------------
+
+
+20120919_09_: ISS constitutional local_svm_classification ;lib=cdk 3
+ruby CV_ds_pctype_algo_algoparams_rseed.rb ISS constitutional local_svm_classification ;lib=cdk 3 ../data/datasets.yaml
+[2012-09-19T13:30:32.9530+02:00] datasets.yaml exists.
+[2012-09-19T13:30:32.9532+02:00] --- prediction_algorithm=local_svm_classification;pc_type=constitutional;feature_dataset_uri=http://toxcreate3.in-silico.ch:8086/dataset/351657;lib=cdk
+[2012-09-19T13:30:32.9635+02:00] --- 
+:dataset_uri: http://toxcreate3.in-silico.ch:8086/dataset/351650
+:prediction_feature: http://toxcreate3.in-silico.ch:8086/dataset/351650/feature/Canc
+:algorithm_uri: http://toxcreate3.in-silico.ch:8086/algorithm/lazar
+:algorithm_params: prediction_algorithm=local_svm_classification;pc_type=constitutional;feature_dataset_uri=http://toxcreate3.in-silico.ch:8086/dataset/351657;lib=cdk
+:random_seed: "3"
+[2012-09-19T16:47:56.7417+02:00] http://toxcreate3.in-silico.ch:8086/validation/crossvalidation/218
+[2012-09-19T16:48:18.7525+02:00] http://toxcreate3.in-silico.ch:8086/validation/report/crossvalidation/221
+[2012-09-19T16:48:18.7526+02:00]  
+=hyperlink("http://toxcreate3.in-silico.ch:8086/dataset/351650";"ISS"),=hyperlink("http://toxcreate3.in-silico.ch:8086/validation/report/crossvalidation/221";"report"),=hyperlink("http://toxcreate3.in-silico.ch:8086/validation/crossvalidation/218";"cv")
+------------------------
+
+
+20120919_09_: ISS constitutional local_svm_classification ;lib=cdk 4
+ruby CV_ds_pctype_algo_algoparams_rseed.rb ISS constitutional local_svm_classification ;lib=cdk 4 ../data/datasets.yaml
+[2012-09-19T16:48:19.6707+02:00] datasets.yaml exists.
+[2012-09-19T16:48:19.6710+02:00] --- prediction_algorithm=local_svm_classification;pc_type=constitutional;feature_dataset_uri=http://toxcreate3.in-silico.ch:8086/dataset/351657;lib=cdk
+[2012-09-19T16:48:19.6807+02:00] --- 
+:dataset_uri: http://toxcreate3.in-silico.ch:8086/dataset/351650
+:prediction_feature: http://toxcreate3.in-silico.ch:8086/dataset/351650/feature/Canc
+:algorithm_uri: http://toxcreate3.in-silico.ch:8086/algorithm/lazar
+:algorithm_params: prediction_algorithm=local_svm_classification;pc_type=constitutional;feature_dataset_uri=http://toxcreate3.in-silico.ch:8086/dataset/351657;lib=cdk
+:random_seed: "4"
+[2012-09-19T19:48:51.5330+02:00] http://toxcreate3.in-silico.ch:8086/validation/crossvalidation/223
+[2012-09-19T19:49:11.5998+02:00] http://toxcreate3.in-silico.ch:8086/validation/report/crossvalidation/223
+[2012-09-19T19:49:11.5999+02:00]  
+=hyperlink("http://toxcreate3.in-silico.ch:8086/dataset/351650";"ISS"),=hyperlink("http://toxcreate3.in-silico.ch:8086/validation/report/crossvalidation/223";"report"),=hyperlink("http://toxcreate3.in-silico.ch:8086/validation/crossvalidation/223";"cv")
+------------------------
+
+
+20120919_09_: ISS constitutional local_svm_classification ;lib=cdk 5
+ruby CV_ds_pctype_algo_algoparams_rseed.rb ISS constitutional local_svm_classification ;lib=cdk 5 ../data/datasets.yaml
+[2012-09-19T19:49:12.5174+02:00] datasets.yaml exists.
+[2012-09-19T19:49:12.5177+02:00] --- prediction_algorithm=local_svm_classification;pc_type=constitutional;feature_dataset_uri=http://toxcreate3.in-silico.ch:8086/dataset/351657;lib=cdk
+[2012-09-19T19:49:12.5272+02:00] --- 
+:dataset_uri: http://toxcreate3.in-silico.ch:8086/dataset/351650
+:prediction_feature: http://toxcreate3.in-silico.ch:8086/dataset/351650/feature/Canc
+:algorithm_uri: http://toxcreate3.in-silico.ch:8086/algorithm/lazar
+:algorithm_params: prediction_algorithm=local_svm_classification;pc_type=constitutional;feature_dataset_uri=http://toxcreate3.in-silico.ch:8086/dataset/351657;lib=cdk
+:random_seed: "5"
+[2012-09-19T22:44:29.7237+02:00] http://toxcreate3.in-silico.ch:8086/validation/crossvalidation/224
+[2012-09-19T22:44:49.8752+02:00] http://toxcreate3.in-silico.ch:8086/validation/report/crossvalidation/224
+[2012-09-19T22:44:49.8753+02:00]  
+=hyperlink("http://toxcreate3.in-silico.ch:8086/dataset/351650";"ISS"),=hyperlink("http://toxcreate3.in-silico.ch:8086/validation/report/crossvalidation/224";"report"),=hyperlink("http://toxcreate3.in-silico.ch:8086/validation/crossvalidation/224";"cv")
+------------------------
+
+
