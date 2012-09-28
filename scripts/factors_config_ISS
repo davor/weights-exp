@@ -3,7 +3,7 @@
 #MTU constitutional local_svm_classification ;lib=cdk
 #RTU constitutional local_svm_classification ;lib=cdk
 #FHM constitutional local_svm_classification ;lib=cdk
-ISS constitutional local_svm_classification ;lib=cdk
+ISS constitutional local_svm_classification ;lib=cdk;weights_option=3
 #MDD constitutional local_svm_regression
 #MDD electronic,cpsa local_svm_regression
 #MDD topological local_svm_regression

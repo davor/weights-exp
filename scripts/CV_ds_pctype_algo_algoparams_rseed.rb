@@ -58,16 +58,27 @@ cv_args[:algorithm_uri] = "http://toxcreate3.in-silico.ch:8086/algorithm/lazar"
 cv_args[:algorithm_params] = algo_params
 cv_args[:random_seed] = r_seed
 puts "[#{Time.now.iso8601(4).to_s}] #{cv_args.to_yaml}"
-
+$stdout.flush
 cv = OpenTox::RestClientWrapper.post( File.join(CONFIG[:services]["opentox-validation"],"crossvalidation"), cv_args )
 puts "[#{Time.now.iso8601(4).to_s}] #{cv}"
-
+$stdout.flush
 cvr = OpenTox::CrossvalidationReport.create( cv , subjectid).uri
 puts "[#{Time.now.iso8601(4).to_s}] #{cvr}"
-
+$stdout.flush
+cv_statistics = OpenTox::Crossvalidation.find("#{cv}").statistics.metadata
+numInstances = cv_statistics[OT::numInstances]
+numUnpredicted = cv_statistics[OT::numUnpredicted]
+percentUnpredicted = cv_statistics[OT::percentUnpredicted]
+accuracy= cv_statistics[OT::classificationStatistics][OT::accuracy]
+fMeasure = []
+truePositiveRate = []
+cv_statistics[OT::classificationStatistics][OT::classValueStatistics].each_index do |i| 
+  fMeasure << cv_statistics[OT::classificationStatistics][OT::classValueStatistics][i][OT::fMeasure]
+  truePositiveRate << cv_statistics[OT::classificationStatistics][OT::classValueStatistics][i][OT::truePositiveRate]
+end 
 puts "[#{Time.now.iso8601(4).to_s}]  "
-puts "=hyperlink(\"#{ds_uri}\";\"#{ds_name}\"),=hyperlink(\"#{cvr}\";\"report\"),=hyperlink(\"#{cv}\";\"cv\")"
+puts "=hyperlink(\"#{ds_uri}\";\"#{ds_name}\"),=hyperlink(\"#{cvr}\";\"report\"),=hyperlink(\"#{cv}\";\"cv\"),#{accuracy},#{numInstances},#{numUnpredicted},#{percentUnpredicted},#{truePositiveRate.join(',')},#{fMeasure.join(',')}"
 
 puts "------------------------"
 puts
-
+$stdout.flush

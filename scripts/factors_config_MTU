@@ -1,6 +1,8 @@
 #Dataset pc_type prediction_algorithm
 #BBA constitutional local_svm_classification ;lib=cdk
-MTU constitutional local_svm_classification ;lib=cdk
+MTU constitutional local_svm_classification ;lib=cdk;weights_option=3
+MTU constitutional local_svm_classification ;lib=cdk;weights_option=4
+MTU constitutional local_svm_classification ;lib=cdk;weights_option=5
 #RTU constitutional local_svm_classification ;lib=cdk
 #FHM constitutional local_svm_classification ;lib=cdk
 #ISS constitutional local_svm_classification ;lib=cdk
